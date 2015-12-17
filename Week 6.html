@@ -1,0 +1,71 @@
+<script>
+
+//a) Given an array x (e.g. [1,5, 10, -2]), create an algorithm (sets of instructions) that replaces any negative number with the value of 0.When the program is done x should have no negative values (e.g. [1, 5, 10, 0]).
+	var arr = [1,-14,5,10,-41]
+	function noNeg(arr) {
+   		//place your code here 
+   		for (i=0; i < arr.length; i++){
+   			if (arr[i] < 0){
+   				arr[i] = 0
+   			}
+   		}
+   		return arr; 
+	}
+	noNeg(arr);
+
+
+//b) Given an array x (e.g. [1,5, 10, -2]), create an algorithm (sets of instructions) that returns an array with the max, min, and average values ([max, min, avg]. ex [0,2,4] should return [4,0,2]).
+	var arr = [1,-14,5,10,-41]
+	function maxMinAvg(arr) {
+   		//place your code here 
+   		var arrNew = [];
+   		var max = arr[0];
+   		var min = arr[0];
+   		var avg = 0;
+   		for (i=0; i < arr.length; i++){
+   			avg = (avg + arr[i])
+   			if(arr[i] > max){
+   				max = arr[i];
+   			}else if(arr[i] < min){
+   				min = arr[i];
+   			}
+   		}
+   		avg = avg/arr.length;
+   		arrNew.push(max, min, avg);
+   		return arrNew; 
+	}
+	maxMinAvg(arr);
+
+//c) Write a function that takes an array as an argument and return an array with the first and last values swapped. The array will have a minimum length of 2 (ex. [1,5,10,-2] should return [-2,5,10,1]).
+var arr = [1,-14,5,10,-41]
+	function swap(arr) {
+	   //place your code here 
+	   arrNew = [];
+	   length = arr.length - 1;
+	   arr.unshift(arr[length]);
+	   arr.pop(arr[length]);
+	   arr.push(arr[1]);
+	   arr.splice(1,1)
+	   arrNew.push(arr);
+	   return arrNew; 
+	}
+	swap(arr);
+
+//d) Write a function that takes an array of numbers and replaces any number that's negative to a string called 'DigitalCrafts'. For example if array = [-1,-3,2] should return ['DigitalCrafts', 'DigitalCrafts', 2].
+	var arr = [1,-14,5,10,-41]
+	function numToStr(arr) {
+	   //place your code here 
+	   arrNew = [];
+	   for (i=0; i < arr.length; i++){
+	   		if(arr[i] < 0){
+	   			arr[i] = "DigitalCrafts";
+	   		}
+	   		arrNew.push(arr[i]);
+	   }
+	   return arrNew; 
+	}
+	numToStr(arr);
+
+//Once finished, email a saved .html file with your answers to hello@digitalcrafts.com with "Hacker Week 6 - First Last Name" in the subject line.
+
+</script>

@@ -1,0 +1,26 @@
+JavaScript: 
+	A way to make ones HTML and CSS active with the user. Makes the webpage dynamic and creates an interactive environment between the user and website. The language used in the MEAN stack.
+
+Angularjs:
+	A clearer more concise way to write JS bound to HTML using "ng-" to make dynamic webpages; helps with databinding
+
+Nodejs:
+	Way to make quicker/multiple connections between the backend and frontend to make the user experience streamlined. Increses performance via efficient threading.
+
+Expressjs:
+	Backend utility for use in the MEAN stack along with MongoDB, Angular and Node; the framework in which to make the website act more dynamically making use of Javascript as the language of all its components
+
+MongoDB:
+	document-oriented database used in the MEAN stack to keep a track of user info such as: username, addresses, choice options, anything to be linked to an account/user
+
+Mongoose:
+	Allows a quicker/efficient way to effectively make use of the database in MongoDB using Node
+
+JSON & APIs:
+	APIs allow the developer to write in JS to properly make use of JSON information. A uniformed way for JS to properly manipulate objects to bring in data from a server so that it can be displayed on the webpage with relevant info when queried.
+
+PHP:
+	No idea, but heard from the Rob that it will make some website features easier
+
+Core Data:
+	Only half way through with info from Joe but so far remember "Object Relational Mapping"
